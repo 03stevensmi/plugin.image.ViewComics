@@ -1,0 +1,59 @@
+{
+"folders": [
+	{
+		"name" : "View Comics",
+		"poster" : "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/icon.png",
+		"fanart" : "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/backround.png",
+		"site_json": ""
+	},
+	{
+	    "name" : "A-Z List",
+		"poster" : "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/icon.png",
+		"fanart" : "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/backround.png",
+		"site_json": ""
+	}
+],
+"sites": [
+    {
+	    "name": "Comic List",
+		"folder": "View Comics",
+        "poster": "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/icon.png",
+        "fanart": "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/backround.png",
+        "items": {
+		    "All": [
+                {
+                    "site_url": "https://viewcomics.me/comic-list/others",
+                    "global": "<div class=\"button-nav\" id=\"manga-nav\">{%}>Next</a>",
+                    "pattern": "<a href=\"{%}\"{*}>{%}</a>{*}<img data-pagespeed-lazy-src=\"{%}\"",
+                    "url": "{%1}",
+                    "name": "{%2}",
+					"plot": "{%2}",
+                    "poster": "{%3}",
+                    "fanart": "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/backround.png",
+			        "next_pattern": "</span>{*}<a href=\"{*}/comic-list/{%}\"",
+			        "next_url": "https://viewcomics.me/comic-list/{%1}"
+                },
+		        {
+                    "global": "<div class=\"button-nav\" id=\"manga-nav\">{%}>Next</a>",
+                    "pattern": "<a href=\"{%}\"{*}>{%}</a>{*}<img data-pagespeed-lazy-src=\"{%}\"",
+                    "name": "{%2}",
+                    "url": "{%1}",
+                    "poster": "{%3}",
+                    "fanart": "",
+			        "next_pattern": "</span>{*}<a href=\"{*}/comic-list/{%}\"",
+			        "next_url": "https://viewcomics.me/comic-list/{%1}"
+                }
+			]
+		}
+	 },
+	 {
+	    "name": "A-Z List",
+		"folder": "A-Z List",
+        "poster": "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/icon.png",
+        "fanart": "https://raw.githubusercontent.com/03stevensmi/plugin.image.ViewComics/master/backround.png",
+        "items": {
+		    "All": [
+			
+    }
+]
+}
